@@ -1,35 +1,33 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <link rel="stylesheet" href="src/styles/header.css">
-        <link rel="stylesheet" href="src/styles/styles.css">
-    
-    </head>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="src/styles/styles.css">
+   
+</head>
 
-    <body>
-       <header>
+<body>
+    <header>
         <nav id="navbar">
-            <i class="fa-solid fa-burger"id="nav_logo">food</i> 
+            <i class="fa-solid fa-burger" id="nav_logo"> food</i>
             <ul id="nav_list">
-                <li class="nav-item active"> 
+                <li class="nav-item active">
                     <a href="#home">Início</a>
                 </li>
-                <li class="nav-item"> 
-                    <a href="#menu">Cardapio</a>
+                <li class="nav-item">
+                    <a href="#menu">Cardápio</a>
                 </li>
-                <li class="nav-item"> 
+                <li class="nav-item">
                     <a href="#testimonials">Avaliações</a>
                 </li>
-                <li class="nav-item"> 
-                    <a href="#reservas">Reservas</a>
-                </li>
-            </ul>   
+            </ul>
+
             <button class="btn-default">
-             Peça Aqui
+                Peça Aqui
             </button>
 
             <button id="mobile_btn">
@@ -39,25 +37,285 @@
 
         <div id="mobile_menu">
             <ul id="mobile_nav_list">
-                <li class="nav-item"> 
+                <li class="nav-item">
                     <a href="#home">Início</a>
                 </li>
-                <li class="nav-item"> 
-                    <a href="#menu">Cardapio</a>
+                <li class="nav-item">
+                    <a href="#menu">Cardápio</a>
                 </li>
-                <li class="nav-item"> 
+                <li class="nav-item">
                     <a href="#testimonials">Avaliações</a>
                 </li>
-                <li class="nav-item"> 
-                    <a href="#reservas">Reservas</a>
-                </li>
-            </ul>   
+            </ul>
 
             <button class="btn-default">
                 Peça Aqui
-               </button>
-
+            </button>
         </div>
-       </header>
-    </body>
+    </header>
+
+    <main id="content">
+        <section id="home">
+            <div class="shape"></div>
+            <div id="cta">
+                <h1 class="title">
+                    O sabor vai até
+                    <span> você</span>
+                </h1>
+
+                <p class="description">
+                    Venha desfrutar do melhor restaurante
+                    de Coimbra, espero um dia te ver aqui.
+                </p>
+
+                <div id="cta_buttons">
+                    <a href="#" class="btn-default">
+                        Ver cardápio
+                    </a>
+
+                    <a href="tel:+351933922199" id="phone_button">
+                        <button class="btn-default">
+                            <i class="fa-solid fa-phone"></i>
+                        </button>
+                        +351 933-922-199
+                        
+                    </a>
+                </div>
+
+                <div class="social-media-buttons">
+                    <a href="https://api.whatsapp.com/send/?phone=%2B351933922199&text=Ol%C3%A1%21+Gostaria+de+mais+informa%C3%A7%C3%B5es.&type=phone_number&app_absent=0" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                
+                    <a href="https://www.instagram.com/_julissz_" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                
+                    <a href="https://www.facebook.com/profile.php?id=100086404328544" target="_blank">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div id="banner">
+                <img src="src/img/hero.png" alt="">
+            </div>
+        </section>
+
+        <section id="menu">
+            <h2 class="section-title">Cardápio</h2>
+            <h3 class="section-subtitle">Nossos pratos especiais</h3>
+
+            <div id="dishes">
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="src/img/dish.png" class="dish-image" alt="">
+
+                    <h3 class="dish-title">
+                        Poke Bowl
+                    </h3>
+                    
+                    <span class="dish-description">
+                        Uma refeição colorida e saudável, composta por arroz, peixe fresco, vegetais crocantes e molhos saborosos. Rico em nutrientes e perfeito para quem busca uma opção leve e nutritiva.
+                    </span>
+
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(300+)</span>
+                    </div>
+
+                    <div class="dish-price">
+                        <h4>14,00€</h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <img src="src/img/dish2.png" class="dish-image" alt="">
+
+                    <h3 class="dish-title">
+                        Sanduíche de salada de repolho vegetariano
+                    </h3>
+
+                    <span class="dish-description">
+                        Uma opção leve e crocante, com salada de repolho cremosa e cenoura em fatias de pão integral. Ideal para quem busca sabor e saúde.
+                    </span>
+
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(600+)</span>
+                    </div>
+
+                    <div class="dish-price">
+                        <h4>17,00€</h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="src/img/dish3.png" class="dish-image" alt="">
+
+                    <h3 class="dish-title">
+                        Granola de Morango e Kiwi
+                    </h3>
+
+                    <span class="dish-description">
+                        Uma granola deliciosa com infusão de morangos frescos e kiwis, perfeita para um café da manhã leve e refrescante.
+                    </span>
+
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(200+)</span>
+                    </div>
+
+                    <div class="dish-price">
+                        <h4>10,00€</h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="src/img/dish4.png" class="dish-image" alt="">
+
+                    <h3 class="dish-title">
+                        Macarrão de Camarão
+                    </h3>
+
+                    <span class="dish-description">
+                        Um prato clássico da culinária tailandesa, preparado com camarão, pimenta, alho, cebola e manjericão. Servido com arroz de jasmim para um toque exótico.
+                    </span>
+
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        
+                        <span>(250+)</span>
+                    </div>
+
+                    <div class="dish-price">
+                        <h4>20,00€</h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials">
+            <img src="src/img/chef.png" id="testimonial_chef" alt="">
+
+            <div id="testimonials_content">
+                <h2 class="section-title">
+                    Depoimentos
+                </h2>
+                <h3 class="section-subtitle">
+                    O que os clientes falam sobre nós
+                </h3>
+
+                <div id="feedbacks">
+                    <div class="feedback">
+                        <img src="src/img/avatar.png" class="feedback-avatar" alt="">
+
+                        <div class="feedback-content">
+                            <p>
+                                Pedro L., Lisboa
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </p>
+                            <p>
+                                "Pratos saborosos e bem apresentados, com preço justo. Vale a pena!"
+                            </p>
+                        </div>
+                    </div>
+                    <div class="feedback">
+                        <img src="src/img/avatar.png" class="feedback-avatar" alt="">
+
+                        <div class="feedback-content">
+                            <p>
+                                Ana P., Porto
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </p>
+                            <p>
+                                "Uma experiência maravilhosa desde o pedido até a entrega! Recomendo!"
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="btn-default">
+                    Ver mais avaliações
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <img src="src/img/wave.svg" alt="">
+
+        <div id="footer_items">
+            <span id="copyright">
+                &copy 2024/2025 Julia Rebouças Leite
+            </span>
+
+            <div class="social-media-buttons">
+                <a href="https://api.whatsapp.com/send/?phone=%2B351933922199&text=Ol%C3%A1%21+Gostaria+de+mais+informa%C3%A7%C3%B5es.&type=phone_number&app_absent=0" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+            
+                <a href="https://www.instagram.com/_julissz_" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            
+                <a href="https://www.facebook.com/profile.php?id=100086404328544" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="src/javascript/script.js"></script>
+</body>
 </html>
